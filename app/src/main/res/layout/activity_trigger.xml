@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#3F9098"
+    tools:context=".trigger">
+
+    <TextView
+        android:layout_margin="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="When in emergency,press the button below"
+        android:layout_marginTop="100dp"
+        android:paddingTop="70dp"
+        android:textStyle="bold"
+        android:textSize="15sp"
+        android:layout_marginLeft="140dp"
+
+        />
+  <Button
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="Press"
+      android:layout_marginLeft="120dp"
+      android:backgroundTint="#8B45A8"
+      />
+
+    <TextView
+        android:layout_margin="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="This sms will send to your registered contacts and current location"
+        android:layout_marginTop="70dp"
+        android:textStyle="bold"
+        android:textSize="15sp"
+     android:layout_marginLeft="120dp"
+        />
+<ImageView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:src="@drawable/danger"
+    />
+
+</LinearLayout>

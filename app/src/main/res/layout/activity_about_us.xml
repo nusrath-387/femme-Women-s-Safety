@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:scrollbars="vertical"
+android:background="#7EFFFF99"
+
+
+android:layout_width="match_parent"
+
+android:layout_height="wrap_content"
+android:fillViewport="false"
+    tools:context=".aboutUs">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:layout_width="290dp"
+        android:layout_height="220dp"
+        app:lottie_autoPlay="true"
+        android:id="@+id/animatiobb"
+        android:elevation="50dp"
+
+
+
+        app:lottie_rawRes="@raw/oner"
+
+        tools:ignore="MissingConstraints" />
+    <TextView
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="About Us"
+        android:textColor="#6C6705"
+        android:fontFamily="@font/ananda"
+        android:textStyle="bold"
+        android:layout_marginLeft="140dp"
+        android:textSize="@dimen/_22ssp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_10ssp"
+        android:textStyle="normal"
+        android:textSize="@dimen/_14ssp"
+        android:textColor="@color/black"
+        android:text="The project is mainly focused on women's safety. This platform brings various facilities for women whenever any woman feels unsafe or they are in any danger.  This is an internet-based application that can be accessed by anyone. Using this application women can constantly stay connected with their family members or close friends. Location can easily be shared and using a siren option women can call for help from people around her. So, this app helps women to protect themselves and we will also be successful in ensuring women's safety. "
+/>
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:layout_width="290dp"
+            android:layout_height="220dp"
+            android:layout_marginLeft="150dp"
+            android:elevation="50dp"
+            app:lottie_autoPlay="true"
+
+
+            app:lottie_rawRes="@raw/oner"
+
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Developed By"
+        android:textColor="#6C6705"
+
+        android:textStyle="bold"
+        android:layout_marginLeft="240dp"
+        android:textSize="@dimen/_15ssp"/>
+    <TextView
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nusrat Islam And Syeda Zarin"
+        android:textColor="#393602"
+
+        android:textStyle="bold"
+        android:layout_marginLeft="210dp"
+        android:textSize="@dimen/_10ssp"/>
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Supervisor"
+            android:textColor="#6C6705"
+
+            android:textStyle="bold"
+            android:layout_marginLeft="245dp"
+            android:textSize="@dimen/_15ssp"/>
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Prithwiraj Bhattacharjee"
+            android:textColor="#353302"
+
+            android:textStyle="bold"
+            android:layout_marginLeft="230dp"
+            android:textSize="@dimen/_10ssp"/>
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Lecturer,CSE Department"
+            android:textColor="#2B2903"
+
+            android:textStyle="bold"
+            android:layout_marginLeft="230dp"
+            android:paddingBottom="@dimen/_4sdp"
+            android:textSize="@dimen/_10ssp"/>
+
+
+    </LinearLayout>
+</ScrollView>

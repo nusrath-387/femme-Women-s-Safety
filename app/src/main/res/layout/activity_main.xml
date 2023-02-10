@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+    tools:context=".MainActivity"
+    android:background="#7EFFFF99"
+
+    tools:ignore="ExtraText">cse
+
+
+    <ImageView
+        android:layout_width="@dimen/_240sdp"
+        android:layout_height="@dimen/_160sdp"
+        android:src="@drawable/femme"
+android:layout_marginLeft="50dp"
+        android:layout_marginTop="40dp"
+        />
+
+
+
+    <EditText
+        android:id="@+id/namee"
+        android:layout_width="@dimen/_250sdp"
+        android:layout_height="@dimen/_30sdp"
+        android:hint="Enter Your Name"
+        android:ems="17"
+        android:textSize="18sp"
+
+        android:layout_marginLeft="@dimen/_20sdp"
+        android:paddingLeft="10dp"
+        android:textColorHint="@color/black"
+        android:inputType="text"/>
+    />
+
+    <EditText
+        android:id="@+id/emailID"
+        android:layout_width="@dimen/_250sdp"
+        android:layout_height="@dimen/_30sdp"
+        android:hint="Enter Your Email"
+
+        android:ems="17"
+        android:textSize="18sp"
+        android:layout_marginTop="@dimen/_7sdp"
+        android:layout_marginLeft="@dimen/_20sdp"
+        android:paddingLeft="10dp"
+        android:textColorHint="@color/black"
+        android:inputType="text"
+        tools:ignore="TextFields"
+        android:autofillHints="" />
+    />
+<!--    <TextView-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="Atleast 20 Charachters"-->
+<!--        android:layout_marginLeft="210dp"-->
+<!--        android:textColor="#77000000"-->
+<!--        android:textStyle="bold"-->
+<!--        android:textSize="16sp"-->
+<!--        />-->
+
+
+
+
+
+    <EditText
+        android:id="@+id/passwordID"
+        android:layout_width="@dimen/_250sdp"
+        android:layout_height="@dimen/_30sdp"
+        android:inputType="textPassword"
+        android:hint="Enter Your password"
+        android:ems="17"
+        android:textSize="18sp"
+
+        android:layout_marginTop="@dimen/_7sdp"
+        android:layout_marginLeft="@dimen/_20sdp"
+        android:paddingLeft="10dp"
+        android:textColorHint="@color/black"
+
+        tools:ignore="TextFields" />
+    <com.google.android.material.checkbox.MaterialCheckBox
+        android:id="@+id/checkbox"
+        android:layout_width="260dp"
+        android:layout_height="50dp"
+        android:textColorHint="@color/black"
+        android:layout_gravity="left"
+        android:hint="Show password"
+        />
+
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SIGNUP"
+        android:id="@+id/signupButton"
+        android:textColor="@color/white"
+        android:layout_marginLeft="100dp"
+        android:paddingLeft="70dp"
+        android:paddingRight="70dp"
+        android:backgroundTint="#5669DD"
+        android:layout_marginTop="16dp"
+        />
+    <TextView
+        android:id="@+id/signUpText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Already Registered?SignIn"
+        android:layout_marginLeft="@dimen/_90sdp"
+
+
+        android:textColor="#0923BD"
+
+        android:layout_marginTop="11dp"
+        android:textSize="18sp"
+        />
+
+    <ProgressBar
+        android:visibility="gone"
+        android:layout_gravity="center"
+        android:id="@+id/determinateBar"
+        style="@style/Widget.AppCompat.ProgressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:progress="25"/>
+
+
+
+
+
+</LinearLayout>

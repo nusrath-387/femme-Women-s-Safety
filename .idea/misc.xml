@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Femmu/app/src/main/res/font/font.xml" value="0.27487179487179486" />
+        <entry key="..\:/Femmu/app/src/main/res/layout/activity_about_us.xml" value="0.264" />
+        <entry key="..\:/Femmu/app/src/main/res/layout/activity_account_created.xml" value="0.1" />
+        <entry key="..\:/Femmu/app/src/main/res/layout/activity_after_homescreen.xml" value="0.1787037037037037" />
+        <entry key="..\:/Femmu/app/src/main/res/layout/activity_contact1_raya.xml" value="0.2" />
+        <entry key="..\:/Femmu/app/src/main/res/layout/activity_contacts.xml" value="0.152" />
+        <entry key="..\:/Femmu/app/src/main/res/layout/activity_current_location.xml" value="0.1" />
+        <entry key="..\:/Femmu/app/src/main/res/layout/activity_forgotten_password.xml" value="0.2" />
+        <entry key="..\:/Femmu/app/src/main/res/layout/activity_get_otp.xml" value="0.25" />
+        <entry key="..\:/Femmu/app/src/main/res/layout/activity_get_otp2.xml" value="0.25" />
+        <entry key="..\:/Femmu/app/src/main/res/layout/activity_helpine.xml" value="0.24615384615384617" />
+        <entry key="..\:/Femmu/app/src/main/res/layout/activity_home.xml" value="0.2" />
+        <entry key="..\:/Femmu/app/src/main/res/layout/activity_loading.xml" value="0.1" />
+        <entry key="..\:/Femmu/app/src/main/res/layout/activity_login_part2.xml" value="0.25" />
+        <entry key="..\:/Femmu/app/src/main/res/layout/activity_main.xml" value="0.264" />
+        <entry key="..\:/Femmu/app/src/main/res/layout/activity_main2.xml" value="0.2" />
+        <entry key="..\:/Femmu/app/src/main/res/layout/activity_main3.xml" value="0.10729166666666666" />
+        <entry key="..\:/Femmu/app/src/main/res/layout/activity_my_current.xml" value="0.1" />
+        <entry key="..\:/Femmu/app/src/main/res/layout/activity_new_view.xml" value="0.1" />
+        <entry key="..\:/Femmu/app/src/main/res/layout/activity_phnoe_number.xml" value="0.2" />
+        <entry key="..\:/Femmu/app/src/main/res/layout/activity_phone_number.xml" value="0.25" />
+        <entry key="..\:/Femmu/app/src/main/res/layout/activity_profile.xml" value="0.2" />
+        <entry key="..\:/Femmu/app/src/main/res/layout/activity_safety_tips.xml" value="0.1" />
+        <entry key="..\:/Femmu/app/src/main/res/layout/activity_send_email_raya.xml" value="0.2" />
+        <entry key="..\:/Femmu/app/src/main/res/layout/activity_send_otp.xml" value="0.25" />
+        <entry key="..\:/Femmu/app/src/main/res/layout/activity_sign_up.xml" value="0.2" />
+        <entry key="..\:/Femmu/app/src/main/res/layout/activity_signin.xml" value="0.264" />
+        <entry key="..\:/Femmu/app/src/main/res/layout/activity_siren_paly.xml" value="0.2" />
+        <entry key="..\:/Femmu/app/src/main/res/layout/activity_tip_off.xml" value="0.264" />
+        <entry key="..\:/Femmu/app/src/main/res/layout/activity_trigger.xml" value="0.176" />
+        <entry key="..\:/Femmu/app/src/main/res/layout/activity_user.xml" value="0.264" />
+        <entry key="..\:/Femmu/app/src/main/res/layout/activity_verify_otp.xml" value="0.264" />
+        <entry key="..\:/Femmu/app/src/main/res/layout/activity_view_contact.xml" value="0.264" />
+        <entry key="..\:/Femmu/app/src/main/res/layout/activity_view_contact2.xml" value="0.1" />
+        <entry key="..\:/Femmu/app/src/main/res/layout/activity_view_contactt.xml" value="0.264" />
+        <entry key="..\:/Femmu/app/src/main/res/layout/activity_welcome_screen.xml" value="0.2" />
+        <entry key="..\:/Femmu/app/src/main/res/layout/head_layout.xml" value="0.119140625" />
+        <entry key="..\:/Femmu/app/src/main/res/layout/header_layout.xml" value="0.11296296296296296" />
+        <entry key="..\:/Femmu/app/src/main/res/layout/list.xml" value="0.2" />
+        <entry key="..\:/Femmu/app/src/main/res/layout/list_item.xml" value="0.16" />
+        <entry key="..\:/Femmu/app/src/main/res/layout/listitem.xml" value="0.1" />
+        <entry key="..\:/Femmu/app/src/main/res/layout/listitemm.xml" value="0.11296296296296296" />
+        <entry key="..\:/Femmu/app/src/main/res/layout/sample_layout.xml" value="0.2" />
+        <entry key="..\:/Femmu/app/src/main/res/menu/sidemenu.xml" value="0.2" />
+        <entry key="..\:/Femmu/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.2" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

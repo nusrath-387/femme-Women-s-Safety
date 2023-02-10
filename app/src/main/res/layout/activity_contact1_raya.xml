@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#7EFFFF99"
+    tools:context=".contact1_Raya">
+
+
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:layout_width="350dp"
+        android:layout_height="320dp"
+        app:lottie_autoPlay="true"
+        android:id="@+id/animatiobb"
+        android:elevation="50dp"
+
+
+
+        app:lottie_rawRes="@raw/contct"
+
+        />
+
+<!--    <ImageView-->
+
+<!--        android:src="@drawable/fem22"-->
+<!--        android:paddingLeft="20dp"-->
+<!--        android:layout_width="390dp"-->
+<!--        android:layout_height="380dp"-->
+
+<!--        />-->
+    <TextView
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="You can call or message Raya for any safety tips or motivation."
+        android:textStyle="bold"
+        android:layout_marginLeft="28dp"
+        android:layout_marginBottom="20dp"
+        android:textSize="17sp"
+        />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginLeft="20dp"
+        >
+    <LinearLayout
+        android:layout_width="350dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+
+
+            <ImageView
+
+                android:src="@drawable/ic_baseline_message_24"
+                android:paddingLeft="20dp"
+                android:layout_marginTop="8dp"
+                android:layout_width="80dp"
+                android:layout_height="60dp"
+                />
+
+
+
+    <TextView
+        android:id="@+id/send1"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:textSize="15sp"
+        android:text="Send Message"
+
+        android:layout_marginLeft="36dp"
+        />
+    </LinearLayout>
+        <LinearLayout
+            android:layout_width="350dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="7dp"
+            android:background="@color/white"
+            android:orientation="horizontal">
+
+
+
+            <ImageView
+
+                android:src="@drawable/ic_baseline_add_ic_call_24"
+                android:paddingLeft="20dp"
+                android:layout_marginTop="8dp"
+                android:layout_width="80dp"
+                android:layout_height="50dp"
+                />
+
+
+
+            <TextView
+                android:id="@+id/call_raya"
+                android:layout_width="150dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="20dp"
+                android:textSize="15sp"
+                android:text="Call  "
+
+                android:layout_marginLeft="36dp"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="350dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="7dp"
+            android:background="@color/white"
+            android:orientation="horizontal">
+
+
+
+            <ImageView
+
+                android:src="@drawable/ic_baseline_email_24"
+                android:paddingLeft="20dp"
+                android:layout_marginTop="8dp"
+                android:layout_width="80dp"
+                android:layout_height="50dp"
+                />
+
+
+
+            <TextView
+                android:id="@+id/email_raya"
+                android:layout_width="150dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="20dp"
+                android:textSize="15sp"
+                android:text="Email  "
+
+                android:layout_marginLeft="36dp"
+                />
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+</LinearLayout>

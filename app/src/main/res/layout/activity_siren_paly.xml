@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#7EFFFF99"
+
+
+    tools:context=".Siren_paly">
+
+
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Press the button below to play the sirem"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:layout_marginLeft="45dp"
+            android:layout_marginBottom="50dp"
+            android:layout_marginTop="50dp"
+
+            />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            >
+            <ImageButton
+                android:id="@+id/start_btn"
+                android:layout_width="80dp"
+                android:layout_height="60dp"
+                android:src="@drawable/ic_baseline_play_circle_filled_24"
+
+                />
+            <ImageButton
+                android:layout_marginLeft="20dp"
+                android:id="@+id/stop_btn"
+                android:layout_width="80dp"
+                android:layout_height="60dp"
+                android:src="@drawable/ic_baseline_stop_circle_24"
+
+                />
+        </LinearLayout>
+
+
+    <ImageView
+        android:layout_width="300dp"
+        android:layout_height="310dp"
+        android:background="@drawable/siren"
+        android:layout_marginTop="200dp"
+        />
+
+
+</LinearLayout>

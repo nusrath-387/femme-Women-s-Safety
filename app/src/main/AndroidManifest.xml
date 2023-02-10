@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.femme_womenssafety">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <permission
+        android:name="com.example.mapbcb.permission.MAPS_RECEIVE"
+        android:protectionLevel="signature" />
+
+    <uses-permission
+        android:name="com.sapientnitro.inhouse.drop.activities.permission.MAPS_RECEIVE"
+        android:required="false" />
+    <uses-permission android:name="com.example.mapbcb.permission.MAPS_RECEIVE" />
+
+    <uses-feature
+        android:glEsVersion="0x00020000"
+        android:required="true" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.FemmeWomensSafety"
+        android:usesCleartextTraffic="true"
+        tools:targetApi="31">
+        <activity
+            android:name=".account_created"
+            android:exported="false" />
+        <activity
+            android:name=".aboutUs"
+            android:exported="false" />
+        <activity
+            android:name=".after_homescreen"
+            android:exported="false" />
+        <activity
+            android:name=".loading"
+            android:exported="false" />
+        <activity
+            android:name=".safety_tips"
+            android:exported="false" />
+        <activity
+            android:name=".viewContactt"
+            android:exported="false" /> <!-- <activity -->
+        <!-- android:name=".welcome_screen" -->
+        <!-- android:exported="false" /> -->
+        <activity
+            android:name=".send_email_raya"
+            android:exported="false" />
+        <activity
+            android:name=".tip_off"
+            android:exported="false" />
+        <activity
+            android:name=".contact1_Raya"
+            android:exported="false" />
+        <activity
+            android:name=".my_current"
+            android:exported="false" />
+        <activity
+            android:name=".newView"
+            android:exported="false" />
+        <activity
+            android:name=".login_part2"
+            android:exported="false" />
+        <activity
+            android:name=".verifyOTP"
+            android:exported="false" />
+        <activity
+            android:name=".sendOTP"
+            android:exported="false" />
+        <activity
+            android:name=".getOtp"
+            android:exported="false" />
+        <activity
+            android:name=".trigger"
+            android:exported="false" />
+        <activity
+            android:name=".Siren_paly"
+            android:exported="false" />
+        <activity
+            android:name=".helpine"
+            android:exported="false" />
+        <activity
+            android:name=".ProfileActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Home_activity"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="false" />
+        <activity
+            android:name=".forgottenPassword"
+            android:exported="false" />
+        <activity
+            android:name=".contacts_activity"
+            android:exported="false" />
+        <activity
+            android:name=".signin"
+            android:exported="false" />
+        <activity
+            android:name=".SignUp"
+            android:exported="false" />
+        <activity
+            android:name=".welcome_screen"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyAMbZtIdJ6VVeZ98ED39_wLrCWTt1Hs2EQ" />
+
+        <uses-library
+            android:name="org.apache.http.legacy"
+            android:required="false" />
+    </application>
+
+</manifest>

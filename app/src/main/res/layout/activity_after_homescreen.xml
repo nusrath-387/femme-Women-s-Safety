@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#7EFFFF99"
+    android:orientation="vertical"
+    tools:context=".after_homescreen">
+
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:layout_width="380dp"
+        android:layout_marginTop="20dp"
+        android:layout_height="460dp"
+        app:lottie_autoPlay="true"
+        android:id="@+id/animatiobb"
+        android:elevation="50dp"
+
+
+
+        app:lottie_rawRes="@raw/register"
+
+        />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/_20sdp"
+        android:orientation="vertical">
+<!--        <TextView-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="Welcome"-->
+<!--            android:textColor="#570505"-->
+<!--            android:fontFamily="@font/ananda"-->
+<!--            android:textStyle="bold"-->
+<!--          android:layout_marginLeft="@dimen/_100ssp"-->
+<!--            android:textSize="@dimen/_25ssp">-->
+
+<!--        </TextView>-->
+        <TextView
+            android:id="@+id/registerrr"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="New User?"
+            android:textStyle="bold"
+            android:textColor="#0D209F"
+            android:layout_marginLeft="140dp"
+            android:textSize="@dimen/_18ssp">
+
+        </TextView>
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Or"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:layout_marginLeft="173dp"
+            android:textSize="@dimen/_18ssp">
+
+        </TextView>
+        <TextView
+            android:id="@+id/log"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Already Registered?"
+            android:textStyle="bold"
+            android:textColor="#0D209F"
+            android:layout_marginLeft="@dimen/_95sdp"
+            android:textSize="@dimen/_18ssp">
+
+        </TextView>
+        <com.airbnb.lottie.LottieAnimationView
+            android:layout_width="280dp"
+            android:layout_marginTop="20dp"
+            android:layout_height="130dp"
+            android:layout_marginLeft="@dimen/_40sdp"
+            app:lottie_autoPlay="true"
+
+            android:elevation="50dp"
+
+
+
+            app:lottie_rawRes="@raw/leaf"
+
+            />
+    </LinearLayout>
+
+</LinearLayout>

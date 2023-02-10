@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:scrollbars="vertical"
+    android:background="#7EFFFF99"
+
+
+    android:layout_width="match_parent"
+
+    android:layout_height="wrap_content"
+    android:fillViewport="false">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="#7EFFFF99"
+    android:layout_height="match_parent"
+    tools:context=".helpine">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="129dp"
+        android:textStyle="bold"
+        android:layout_marginTop="20dp"
+        android:textSize="22sp"
+        android:textColor="@color/black"
+        android:text="Emergency Call"
+        />
+
+    <ImageView
+
+        android:src="@drawable/hospi"
+        android:layout_marginLeft="110dp"
+        android:layout_marginTop="20dp"
+
+        android:layout_width="170dp"
+        android:layout_height="170dp"
+
+
+        />
+
+    <Button
+        android:backgroundTint="#99D3D320"
+        android:id="@+id/police_call"
+        android:text="Call Police Station"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="50dp"
+        android:textColor="@color/black"
+        android:layout_marginLeft="87dp"
+
+        android:paddingRight="40dp">
+
+
+
+
+    </Button>
+
+    <ImageView
+
+        android:src="@drawable/police"
+        android:layout_marginLeft="110dp"
+        android:layout_marginTop="20dp"
+
+        android:layout_width="170dp"
+        android:layout_height="140dp"
+
+
+        />
+
+    <Button
+        android:backgroundTint="#99D3D320"
+        android:id="@+id/hospital"
+
+        android:text="Call Ambulence"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="60dp"
+        android:textColor="@color/black"
+        android:layout_marginLeft="87dp"
+
+        android:paddingRight="60dp">
+
+
+
+
+    </Button>
+
+    <ImageView
+        android:layout_marginTop="20dp"
+
+        android:src="@drawable/domestic"
+        android:layout_marginLeft="107dp"
+
+        android:layout_width="190dp"
+        android:layout_height="182dp"
+
+
+        />
+
+        <Button
+            android:backgroundTint="#99D3D320"
+            android:id="@+id/domestic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+        android:paddingLeft="60dp"
+            android:textColor="@color/black"
+            android:layout_marginLeft="85dp"
+            android:paddingRight="60dp"
+
+
+            android:text="Women Helpline">
+
+        </Button>
+    <ImageView
+
+        android:src="@drawable/student"
+        android:layout_marginLeft="110dp"
+        android:layout_marginTop="20dp"
+
+        android:layout_width="170dp"
+        android:layout_height="182dp"
+
+
+        />
+
+    <Button
+        android:backgroundTint="#99D3D320"
+        android:id="@+id/student"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:paddingLeft="77dp"
+        android:textColor="@color/black"
+        android:layout_marginLeft="80dp"
+        android:text="Student Helpline"
+        android:paddingRight="75dp">
+
+
+
+
+        </Button>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</LinearLayout>
+</ScrollView>

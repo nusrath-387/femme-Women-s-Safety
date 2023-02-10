@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#7EFFFF99"
+    android:orientation="vertical"
+    tools:context=".safety_tips">
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:layout_width="290dp"
+        android:layout_height="180dp"
+        app:lottie_autoPlay="true"
+        android:id="@+id/animatiobb"
+        android:elevation="50dp"
+
+
+
+        app:lottie_rawRes="@raw/oner"
+
+        tools:ignore="MissingConstraints" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Safety Tips for Work"
+        android:textSize="24sp"
+        android:layout_gravity="center"
+        android:textColor="#E1000000"
+
+        android:fontFamily="@font/ananda"
+
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:textColor="@color/black"
+        android:layout_margin="15dp"
+        android:text="1.Communicate the importance of safety culture. "
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:textColor="@color/black"
+        android:layout_margin="15dp"
+        android:text="2.Encourage situational awareness. "
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:textColor="@color/black"
+        android:layout_margin="15dp"
+        android:text="3.Host regular safety training. ... "
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:textColor="@color/black"
+        android:layout_margin="15dp"
+        android:text="4.Run emergency drills. "
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:textColor="@color/black"
+        android:layout_margin="15dp"
+        android:text="5.Provide proper safety equipment and PPE. ... "
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:textColor="@color/black"
+        android:layout_margin="15dp"
+        android:text="6.Keep facility and equipment in good condition. ... "
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:textColor="@color/black"
+        android:layout_margin="15dp"
+        android:text="7.Make safety a daily priority. ... "
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:textColor="@color/black"
+        android:layout_margin="15dp"
+        android:text="8.Communicate about hazards. "
+        />
+
+
+</LinearLayout>
