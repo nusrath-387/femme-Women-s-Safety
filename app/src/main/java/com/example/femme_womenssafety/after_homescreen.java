@@ -15,6 +15,7 @@ public class after_homescreen extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_after_homescreen);
         registerrr=(TextView) findViewById(R.id.registerrr);
+        getSupportActionBar().hide();
         log=(TextView) findViewById(R.id.log);
         log.setOnClickListener(new View.OnClickListener() {
             @Override

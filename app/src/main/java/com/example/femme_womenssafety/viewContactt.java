@@ -35,138 +35,136 @@ public class viewContactt extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_view_contactt);
-ImageView phoneCall=(ImageView) findViewById(R.id.phoneCall);
-        ImageView msgRegister=(ImageView) findViewById(R.id.msgRegister);
-        ImageView phoneCall2=(ImageView) findViewById(R.id.phoneCall2);
-        ImageView msgRegister2=(ImageView) findViewById(R.id.msgRegister2);
-        ImageView phoneCall3=(ImageView) findViewById(R.id.phoneCall3);
-        ImageView msgRegister3=(ImageView) findViewById(R.id.msgRegister3);
-        ImageView phoneCall4=(ImageView) findViewById(R.id.phoneCall4);
-        ImageView msgRegister4=(ImageView) findViewById(R.id.msgRegister4);
-        ImageView phoneCall5=(ImageView) findViewById(R.id.phoneCall5);
-        ImageView msgRegister5=(ImageView) findViewById(R.id.msgRegister5);
-        ImageView phoneCall6=(ImageView) findViewById(R.id.phoneCall6);
-        ImageView msgRegister6=(ImageView) findViewById(R.id.msgRegister6);
-        phoneCall2.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent=new Intent(Intent.ACTION_DIAL);
-
-                intent.setData(Uri.parse("tel:01721902799"));//for avoiding error have to give 'tel'
-                startActivity(intent);
-
-            }
-        });
-        msgRegister2.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent=new Intent(Intent.ACTION_VIEW, Uri.fromParts("sms","01721902799","null"));
-                intent.putExtra("sms_body","");
-                startActivity(intent);
-
-            }
-        });
-        phoneCall3.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent=new Intent(Intent.ACTION_DIAL);
-
-                intent.setData(Uri.parse("tel:01721902799"));//for avoiding error have to give 'tel'
-                startActivity(intent);
-
-            }
-        });
-        msgRegister3.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent=new Intent(Intent.ACTION_VIEW, Uri.fromParts("sms","01721902799","null"));
-                intent.putExtra("sms_body","");
-                startActivity(intent);
-
-            }
-        });
-        phoneCall4.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent=new Intent(Intent.ACTION_DIAL);
-
-                intent.setData(Uri.parse("tel:01721902799"));//for avoiding error have to give 'tel'
-                startActivity(intent);
-
-            }
-        });
-        msgRegister4.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent=new Intent(Intent.ACTION_VIEW, Uri.fromParts("sms","01721902799","null"));
-                intent.putExtra("sms_body","");
-                startActivity(intent);
-
-            }
-        });
-        phoneCall5.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent=new Intent(Intent.ACTION_DIAL);
-
-                intent.setData(Uri.parse("tel:01721902799"));//for avoiding error have to give 'tel'
-                startActivity(intent);
-
-            }
-        });
-        msgRegister5.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent=new Intent(Intent.ACTION_VIEW, Uri.fromParts("sms","01721902799","null"));
-                intent.putExtra("sms_body","");
-                startActivity(intent);
-
-            }
-        });
-        phoneCall6.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent=new Intent(Intent.ACTION_DIAL);
-
-                intent.setData(Uri.parse("tel:01721902799"));//for avoiding error have to give 'tel'
-                startActivity(intent);
-
-            }
-        });
-        msgRegister6.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent=new Intent(Intent.ACTION_VIEW, Uri.fromParts("sms","01721902799","null"));
-                intent.putExtra("sms_body","");
-                startActivity(intent);
-
-            }
-        });
-
-
-        phoneCall.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent=new Intent(Intent.ACTION_DIAL);
-
-                intent.setData(Uri.parse("tel:01721902799"));//for avoiding error have to give 'tel'
-                startActivity(intent);
-            }
-        });
-
-        msgRegister.setOnClickListener(new View.OnClickListener() {
-            @Override
-
-                public void onClick(View view) {
-                    Intent intent=new Intent(Intent.ACTION_VIEW, Uri.fromParts("sms","01721902799","null"));
-                    intent.putExtra("sms_body","");
-                    startActivity(intent);
-
-                }
-            });
-            }
-
-
+//ImageView phoneCall=(ImageView) findViewById(R.id.phoneCall);
+//        ImageView msgRegister=(ImageView) findViewById(R.id.msgRegister);
+//        ImageView phoneCall2=(ImageView) findViewById(R.id.phoneCall2);
+//        ImageView msgRegister2=(ImageView) findViewById(R.id.msgRegister2);
+//        ImageView phoneCall3=(ImageView) findViewById(R.id.phoneCall3);
+//        ImageView msgRegister3=(ImageView) findViewById(R.id.msgRegister3);
+//        ImageView phoneCall4=(ImageView) findViewById(R.id.phoneCall4);
+//        ImageView msgRegister4=(ImageView) findViewById(R.id.msgRegister4);
+//        ImageView phoneCall5=(ImageView) findViewById(R.id.phoneCall5);
+//        ImageView msgRegister5=(ImageView) findViewById(R.id.msgRegister5);
+//        ImageView phoneCall6=(ImageView) findViewById(R.id.phoneCall6);
+//        ImageView msgRegister6=(ImageView) findViewById(R.id.msgRegister6);
+//        phoneCall2.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                Intent intent=new Intent(Intent.ACTION_DIAL);
+//
+//                intent.setData(Uri.parse("tel:01721902799"));//for avoiding error have to give 'tel'
+//                startActivity(intent);
+//
+//            }
+//        });
+//        msgRegister2.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                Intent intent=new Intent(Intent.ACTION_VIEW, Uri.fromParts("sms","01721902799","null"));
+//                intent.putExtra("sms_body","");
+//                startActivity(intent);
+//
+//            }
+//        });
+//        phoneCall3.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                Intent intent=new Intent(Intent.ACTION_DIAL);
+//
+//                intent.setData(Uri.parse("tel:01721902799"));//for avoiding error have to give 'tel'
+//                startActivity(intent);
+//
+//            }
+//        });
+//        msgRegister3.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                Intent intent=new Intent(Intent.ACTION_VIEW, Uri.fromParts("sms","01721902799","null"));
+//                intent.putExtra("sms_body","");
+//                startActivity(intent);
+//
+//            }
+//        });
+//        phoneCall4.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                Intent intent=new Intent(Intent.ACTION_DIAL);
+//
+//                intent.setData(Uri.parse("tel:01721902799"));//for avoiding error have to give 'tel'
+//                startActivity(intent);
+//
+//            }
+//        });
+//        msgRegister4.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                Intent intent=new Intent(Intent.ACTION_VIEW, Uri.fromParts("sms","01721902799","null"));
+//                intent.putExtra("sms_body","");
+//                startActivity(intent);
+//
+//            }
+//        });
+//        phoneCall5.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                Intent intent=new Intent(Intent.ACTION_DIAL);
+//
+//                intent.setData(Uri.parse("tel:01721902799"));//for avoiding error have to give 'tel'
+//                startActivity(intent);
+//
+//            }
+//        });
+//        msgRegister5.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                Intent intent=new Intent(Intent.ACTION_VIEW, Uri.fromParts("sms","01721902799","null"));
+//                intent.putExtra("sms_body","");
+//                startActivity(intent);
+//
+//            }
+//        });
+//        phoneCall6.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                Intent intent=new Intent(Intent.ACTION_DIAL);
+//
+//                intent.setData(Uri.parse("tel:01721902799"));//for avoiding error have to give 'tel'
+//                startActivity(intent);
+//
+//            }
+//        });
+//        msgRegister6.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                Intent intent=new Intent(Intent.ACTION_VIEW, Uri.fromParts("sms","01721902799","null"));
+//                intent.putExtra("sms_body","");
+//                startActivity(intent);
+//
+//            }
+//        });
+//
+//
+//        phoneCall.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                Intent intent=new Intent(Intent.ACTION_DIAL);
+//
+//                intent.setData(Uri.parse("tel:01721902799"));//for avoiding error have to give 'tel'
+//                startActivity(intent);
+//            }
+//        });
+//
+//        msgRegister.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//
+//                public void onClick(View view) {
+//                    Intent intent=new Intent(Intent.ACTION_VIEW, Uri.fromParts("sms","01721902799","null"));
+//                    intent.putExtra("sms_body","");
+//                    startActivity(intent);
+//
+//                }
+//            });
+//            }
 
 
 //       final ArrayAdapter<String>myadapter=new ArrayAdapter<>(viewContactt.this, android.R.layout.simple_list_item_1,myArrayList);
@@ -212,4 +210,4 @@ ImageView phoneCall=(ImageView) findViewById(R.id.phoneCall);
 //
 //    }
 
-    }
+    }}

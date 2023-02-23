@@ -12,33 +12,50 @@
         android:layout_height="wrap_content"
         android:text="Add your contacts"
         android:layout_marginTop="20dp"
-        android:layout_marginLeft="85dp"
+        android:layout_marginLeft="95dp"
         android:textStyle="bold"
         android:textColor="#7E000000"
+        android:fontFamily="@font/ananda"
+
         android:layout_marginBottom="50dp"
 
         android:textSize="27sp"/>
+    <com.airbnb.lottie.LottieAnimationView
+        android:layout_width="280dp"
+        android:layout_height="170dp"
+        app:lottie_autoPlay="true"
+        android:id="@+id/wait"
+        android:layout_marginTop="10dp"
 
+        android:layout_marginLeft="70dp"
+        android:elevation="50dp"
+
+
+
+        app:lottie_rawRes="@raw/phn"
+
+        />
 
 
 
 
     <EditText
         android:id="@+id/addNam"
-        android:layout_width="300dp"
+        android:layout_width="350dp"
         android:layout_height="wrap_content"
         android:layout_centerInParent="true"
         android:hint="Enter Name "
         android:padding="15dp"
+        android:layout_marginTop="10dp"
         android:textColorHint="#8D000000"
         android:textStyle="bold|italic"
         android:layout_marginBottom="20dp"
         android:layout_marginLeft="20dp"
-        android:backgroundTint="#B4E4E41D"
-        android:background="#AD56D1"/>
+
+       />
     <EditText
         android:id="@+id/addNum"
-        android:layout_width="300dp"
+        android:layout_width="350dp"
         android:layout_height="wrap_content"
         android:layout_centerInParent="true"
         android:hint="Enter Contact Number"
@@ -47,20 +64,34 @@
         android:layout_marginLeft="20dp"
         android:textColorHint="#8D000000"
         android:textStyle="bold|italic"
-        android:backgroundTint="#B4E4E41D"
-        android:background="#AD56D1"/>
+     />
 
 
     <Button
         android:id="@+id/addButton"
-        android:layout_width="wrap_content"
+        android:layout_width="250dp"
         android:layout_height="wrap_content"
         android:layout_marginLeft="100dp"
-        android:text="ADD"
+        android:text="Add Contact"
         android:textColor="#EB000000"
         android:layout_marginTop="30dp"
         android:paddingRight="70dp"
-        android:paddingLeft="70dp"
+        android:paddingLeft="50dp"
+        android:paddingTop="15dp"
+        android:paddingBottom="15dp"
+        android:backgroundTint="#E2DCDC1D"
+
+        />
+    <Button
+        android:id="@+id/loadButton"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="100dp"
+        android:text="View Conatct"
+        android:textColor="#EB000000"
+        android:layout_marginTop="10dp"
+        android:paddingRight="70dp"
+        android:paddingLeft="50dp"
         android:paddingTop="15dp"
         android:paddingBottom="15dp"
         android:backgroundTint="#E2DCDC1D"
@@ -68,11 +99,11 @@
         />
 
         />
-    <ImageView
-        android:layout_width="570dp"
-        android:layout_height="500dp"
+<!--    <ImageView-->
+<!--        android:layout_width="570dp"-->
+<!--        android:layout_height="500dp"-->
 
-        android:src="@drawable/girls"/>
+<!--        android:src="@drawable/girls"/>-->
 
 </LinearLayout>
 

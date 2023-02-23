@@ -48,6 +48,9 @@
             android:name=".account_created"
             android:exported="false" />
         <activity
+            android:name=".contact_added"
+            android:exported="false" />
+        <activity
             android:name=".aboutUs"
             android:exported="false" />
         <activity
@@ -87,9 +90,6 @@
             android:exported="false" />
         <activity
             android:name=".sendOTP"
-            android:exported="false" />
-        <activity
-            android:name=".getOtp"
             android:exported="false" />
         <activity
             android:name=".trigger"

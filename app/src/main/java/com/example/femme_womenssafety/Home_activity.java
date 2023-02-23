@@ -28,6 +28,7 @@ public class Home_activity extends AppCompatActivity  {
         animation = (LottieAnimationView) findViewById(R.id.animatiob);
         animatiobb = (LottieAnimationView) findViewById(R.id.animatiobb);
         textAnimation = (TextView) findViewById(R.id.textAnimation);
+        getSupportActionBar().hide();
 
 
 

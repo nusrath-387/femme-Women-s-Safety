@@ -8,7 +8,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:scrollbars="vertical"
-    android:background="#7EFFFF99"
+    android:background="#D7CFCF91"
 
 
     android:layout_width="match_parent"
@@ -19,7 +19,8 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
-        android:background="#D7FFFF99">
+        android:background="#D7DADACF">
+
 
 
 
@@ -32,313 +33,99 @@
             <LinearLayout
                 android:layout_marginTop="30dp"
                 android:layout_width="wrap_content"
-                android:background="#7EFFFF99"
+                android:background="#D7DADACF"
                 android:layout_height="match_parent"
                 android:orientation="horizontal">
 
-                    <LinearLayout
-                        android:id="@+id/sirenn"
-                        android:layout_width="145dp"
-                        android:orientation="vertical"
-                        android:background="#EEE6E6DA"
-                        android:layout_marginLeft="36dp"
-                        android:layout_height="160dp">
-                        <ImageView
-                            android:layout_margin="5dp"
-                            android:src="@drawable/sirenn"
-                            android:paddingLeft="20dp"
-                            android:layout_width="110dp"
-                            android:layout_height="114dp"
+                    <RelativeLayout
 
-                            />
+                        android:id="@+id/sirenn"
+                        android:layout_width="150dp"
+                        android:layout_height="200dp"
+                    android:layout_marginLeft="@dimen/_23sdp"
+                        android:alpha="0.5"
+                        android:background="@drawable/style"
+
+
+
+
+                        android:elevation="60dp">
+
+                        <ImageView
+                            android:layout_width="115dp"
+                            android:layout_height="135dp"
+                            android:layout_marginStart="5dp"
+                            android:layout_marginTop="5dp"
+
+                            android:layout_marginEnd="5dp"
+                            android:layout_marginBottom="5dp"
+                            android:paddingLeft="20dp"
+                            android:src="@drawable/sir" />
+
                         <TextView
 
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
-                            android:textStyle="bold"
                             android:layout_marginLeft="37dp"
+                            android:layout_marginTop="140dp"
                             android:layout_marginBottom="10dp"
-                            android:textColor="#352D01"
                             android:text="Siren Play"
-                            />
-
-                    </LinearLayout>
-                <LinearLayout
-                    android:id="@+id/helplinee"
-                    android:layout_width="146dp"
-                    android:orientation="vertical"
-                    android:background="#DDE6E6DA"
-                    android:layout_marginLeft="36dp"
-                    android:layout_height="160dp">
-                    <ImageView
-                        android:layout_margin="10dp"
-                        android:src="@drawable/sem"
-                        android:paddingLeft="20dp"
-                        android:layout_width="110dp"
-                        android:layout_height="70dp"
-
-                        />
-                    <TextView
+                            android:textColor="#EDECEC"
+                            android:textSize="@dimen/_12ssp"
+                            android:textStyle="bold" />
 
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:textStyle="bold"
-                        android:layout_marginLeft="50dp"
-                        android:layout_marginTop="30dp"
-                        android:textColor="#352D01"
-                        android:textSize="15sp"
-                        android:layout_marginBottom="10dp"
+                    </RelativeLayout>
+<!--                <LinearLayout-->
+<!--                    android:id="@+id/helplinee"-->
+<!--                    android:layout_width="160dp"-->
+<!--                    android:layout_height="160dp"-->
+<!--                    android:alpha="0.5"-->
+<!--                    android:background="@drawable/style"-->
+<!--                    android:backgroundTint="#B3B1B1"-->
+<!--                    android:elevation="60dp">-->
 
-                        android:text="Helpline"
-                        />
+                    <RelativeLayout
 
-                </LinearLayout>
-
-
-
-
-
-
-                </LinearLayout>
-        <LinearLayout
-            android:layout_marginTop="70dp"
-            android:layout_width="wrap_content"
-            android:background="#7EFFFF99"
+                        android:id="@+id/help"
+                        android:layout_width="150dp"
+                        android:layout_height="200dp"
+                        android:layout_marginLeft="@dimen/_37sdp"
 
-            android:layout_height="match_parent"
-            android:orientation="horizontal">
+                        android:alpha="0.5"
+                        android:background="@drawable/style"
 
-            <LinearLayout
-                android:id="@+id/current"
-                android:layout_width="145dp"
-                android:orientation="vertical"
-                android:background="#DDE6E6DA"
-                android:layout_marginLeft="36dp"
-                android:layout_height="160dp">
-                <ImageView
-                    android:layout_margin="7dp"
-                    android:src="@drawable/map"
-                    android:paddingLeft="20dp"
-                    android:layout_width="110dp"
-
-                    android:layout_height="69dp"
-
-                    />
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:textStyle="bold"
-                    android:textSize="15sp"
-                    android:layout_marginTop="34dp"
-                    android:layout_marginLeft="24dp"
-                    android:layout_marginBottom="10dp"
-                    android:textColor="#2E2702"
-                    android:text="Current Loaction"
-                    />
-
-            </LinearLayout>
-
-
-
-
-            <LinearLayout
-                android:id="@+id/tip"
-                android:layout_width="145dp"
-                android:orientation="vertical"
-                android:background="#DDE6E6DA"
-                android:layout_marginLeft="43dp"
-                android:layout_height="160dp">
-                <ImageView
-                    android:layout_margin="16dp"
-                    android:src="@drawable/seminarrr"
-                    android:paddingLeft="20dp"
-                    android:layout_width="90dp"
-                    android:layout_height="80dp"
 
 
-                    />
-                <TextView
-
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:textStyle="bold"
-                    android:layout_marginLeft="39dp"
-                    android:layout_marginTop="17dp"
-                    android:layout_marginBottom="10dp"
-                    android:textColor="#352D01"
-                    android:textSize="15sp"
-                    android:text="Consulation"
-                    />
-
-            </LinearLayout>
-
-
-
-
-        </LinearLayout>
-
-
-
-
-
-        <LinearLayout
-            android:layout_marginTop="70dp"
-            android:layout_width="wrap_content"
-            android:background="#7EFFFF99"
-            android:layout_height="match_parent"
-            android:orientation="horizontal">
-            <LinearLayout
-                android:id="@+id/contactt"
-                android:layout_width="145dp"
-                android:orientation="vertical"
-                android:background="#DDE6E6DA"
-                android:layout_marginLeft="36dp"
-                android:layout_height="160dp">
-                <ImageView
-                    android:layout_margin="16dp"
-                    android:src="@drawable/add"
-                    android:paddingLeft="20dp"
-                    android:layout_width="80dp"
-                    android:layout_height="70dp"
-
-
-                    />
-
-                <TextView
-
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:textStyle="bold"
-                    android:layout_marginLeft="30dp"
-                    android:layout_marginTop="17dp"
-                    android:layout_marginBottom="10dp"
-                    android:textColor="#352D01"
-                    android:text="Add Contact"
-                    />
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:id="@+id/view_off"
-                android:layout_width="145dp"
-                android:orientation="vertical"
-                android:background="#DDE6E6DA"
-                android:layout_marginLeft="43dp"
-                android:layout_height="160dp">
-                <ImageView
-                    android:layout_margin="5dp"
-                    android:src="@drawable/viewcon"
-                    android:paddingLeft="20dp"
-                    android:layout_width="100dp"
 
-                    android:layout_height="76dp"
+                        android:elevation="20dp">
 
-                    />
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:textStyle="bold"
-                    android:layout_marginTop="30dp"
-                    android:layout_marginLeft="30dp"
-                    android:layout_marginBottom="10dp"
-                    android:textColor="#3A3103"
-                    android:text="View Contacts"
-                    />
+                        <ImageView
+                            android:layout_width="225dp"
+                            android:layout_height="125dp"
 
-            </LinearLayout>
 
+                            android:layout_marginEnd="5dp"
+                            android:layout_marginBottom="5dp"
 
+                            android:paddingLeft="10dp"
 
+                            android:paddingTop="@dimen/_11ssp"
+                            android:src="@drawable/helpliner" />
 
+                        <TextView
 
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="55dp"
+                            android:layout_marginTop="147dp"
+                            android:layout_marginBottom="10dp"
+                            android:text="Helpline"
+                            android:textColor="#EDECEC"
+                            android:textSize="16sp"
 
+                            android:textStyle="bold" />
 
-        </LinearLayout>
-        <LinearLayout
-            android:layout_marginTop="60dp"
-            android:layout_width="wrap_content"
-            android:background="#7EFFFF99"
-            android:layout_height="match_parent"
-            android:orientation="horizontal">
-            <LinearLayout
-                android:id="@+id/safe"
-                android:layout_width="145dp"
-                android:orientation="vertical"
-                android:background="#DDE6E6DA"
-                android:layout_marginLeft="36dp"
-                android:layout_height="160dp">
-                <ImageView
-                    android:layout_margin="16dp"
-                    android:src="@drawable/safe"
-                    android:paddingLeft="20dp"
-                    android:layout_width="90dp"
-                    android:layout_height="80dp"
-
-
-                    />
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:textStyle="bold"
-                    android:layout_marginLeft="42dp"
-                    android:layout_marginTop="17dp"
-                    android:layout_marginBottom="10dp"
-                    android:textColor="#2E2702"
-                    android:text="Safety Tips"
-                    />
-
-            </LinearLayout>
-
-
-
-            <LinearLayout
-                android:id="@+id/signout"
-                android:layout_width="145dp"
-                android:orientation="vertical"
-                android:background="#DDE6E6DA"
-                android:layout_marginLeft="43dp"
-                android:layout_height="160dp">
-                <ImageView
-                    android:layout_margin="16dp"
-                    android:src="@drawable/signout"
-                    android:paddingLeft="20dp"
-                    android:layout_width="90dp"
-                    android:layout_height="97dp"
-
-
-                    />
-                <TextView
-
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:textStyle="bold"
-                    android:layout_marginLeft="39dp"
-                    android:layout_marginTop="2dp"
-                    android:layout_marginBottom="10dp"
-                    android:textColor="#221C01"
-                    android:textSize="15sp"
-                    android:text="Sign Out"
-                    />
-
-            </LinearLayout>
-
-
-
-
-        </LinearLayout>
-
-
-
-
-
-
-
-
-
-
-
-
-
+                    </RelativeLayout>
 
 
 
@@ -347,6 +134,283 @@
 
 
     </LinearLayout>
+        <LinearLayout
+            android:layout_marginTop="70dp"
+            android:layout_width="wrap_content"
+            android:background="#D7DADACF"
+
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+
+                android:id="@+id/current"
+                android:layout_width="150dp"
+                android:layout_height="200dp"
+                android:layout_marginLeft="@dimen/_23sdp"
+                android:alpha="0.5"
+                android:background="@drawable/style"
+
+
+
+
+                android:elevation="60dp">
+
+                <ImageView
+                    android:layout_width="130dp"
+                    android:layout_height="129dp"
+
+
+                    android:layout_marginTop="7dp"
+
+
+                    android:layout_marginBottom="7dp"
+                    android:paddingLeft="20dp"
+                    android:src="@drawable/loco" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginTop="154dp"
+                    android:layout_marginBottom="10dp"
+                    android:text="Current Loaction"
+                    android:textColor="#EDECEC"
+                    android:textSize="@dimen/_12ssp"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+
+                android:id="@+id/tip"
+                android:layout_width="150dp"
+                android:layout_height="200dp"
+
+                android:layout_marginLeft="@dimen/_37sdp"
+                android:alpha="0.5"
+                android:background="@drawable/style"
+
+
+
+
+                android:elevation="60dp">
+
+                <ImageView
+                    android:layout_width="80dp"
+                    android:layout_height="79dp"
+
+                    android:layout_marginLeft="@dimen/_21ssp"
+                    android:layout_marginTop="37dp"
+
+
+                    android:layout_marginBottom="7dp"
+                    android:paddingLeft="20dp"
+                    android:src="@drawable/nooh" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginTop="154dp"
+                    android:layout_marginBottom="10dp"
+                    android:text="Consulation"
+                    android:textColor="#EDECEC"
+                    android:textSize="@dimen/_12ssp"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="70dp"
+            android:layout_width="wrap_content"
+            android:background="#D7DADACF"
+
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+
+                android:id="@+id/contactt"
+                android:layout_width="150dp"
+                android:layout_height="200dp"
+                android:layout_marginLeft="@dimen/_23sdp"
+                android:alpha="0.5"
+                android:background="@drawable/style"
+
+
+
+
+                android:elevation="60dp">
+
+                <ImageView
+                    android:layout_width="90dp"
+                    android:layout_height="69dp"
+                    android:layout_marginLeft="30dp"
+
+                    android:layout_marginTop="37dp"
+
+
+                    android:layout_marginBottom="7dp"
+
+                    android:src="@drawable/addd" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="35dp"
+                    android:layout_marginTop="154dp"
+                    android:layout_marginBottom="10dp"
+                    android:text="Add Contact"
+                    android:textColor="#EDECEC"
+                    android:textSize="@dimen/_12ssp"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+
+                android:id="@+id/view_off"
+                android:layout_width="150dp"
+                android:layout_height="200dp"
+
+                android:layout_marginLeft="@dimen/_37sdp"
+                android:alpha="0.5"
+                android:background="@drawable/style"
+
+
+
+
+                android:elevation="60dp">
+
+                <ImageView
+                    android:layout_width="80dp"
+                    android:layout_height="79dp"
+
+                    android:layout_marginLeft="@dimen/_21ssp"
+                    android:layout_marginTop="37dp"
+
+
+                    android:layout_marginBottom="7dp"
+                    android:paddingLeft="20dp"
+                    android:src="@drawable/view" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginTop="154dp"
+                    android:layout_marginBottom="10dp"
+                    android:text="View Contact"
+                    android:textColor="#EDECEC"
+                    android:textSize="@dimen/_12ssp"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginTop="70dp"
+            android:layout_width="wrap_content"
+            android:background="#D7DADACF"
+
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+
+                android:id="@+id/safe"
+                android:layout_width="150dp"
+                android:layout_height="200dp"
+                android:layout_marginLeft="@dimen/_23sdp"
+                android:alpha="0.5"
+                android:background="@drawable/style"
+
+
+
+
+                android:elevation="60dp">
+
+                <ImageView
+                    android:layout_width="90dp"
+                    android:layout_height="69dp"
+                    android:layout_marginLeft="30dp"
+
+                    android:layout_marginTop="37dp"
+
+
+                    android:layout_marginBottom="7dp"
+
+                    android:src="@drawable/tips" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="39dp"
+                    android:layout_marginTop="154dp"
+                    android:layout_marginBottom="10dp"
+                    android:text="Safety Tips"
+                    android:textColor="#EDECEC"
+                    android:textSize="@dimen/_12ssp"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+
+                android:id="@+id/signout"
+                android:layout_width="150dp"
+                android:layout_height="200dp"
+ android:layout_marginBottom="@dimen/_11ssp"
+                android:layout_marginLeft="@dimen/_37sdp"
+                android:alpha="0.5"
+                android:background="@drawable/style"
+
+
+
+
+                android:elevation="60dp">
+
+                <ImageView
+                    android:layout_width="90dp"
+                    android:layout_height="69dp"
+                    android:layout_marginLeft="@dimen/_21ssp"
+                    android:layout_marginTop="37dp"
+
+
+                    android:layout_marginBottom="7dp"
+                    android:paddingLeft="20dp"
+                    android:src="@drawable/pixel" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="54dp"
+                    android:layout_marginTop="154dp"
+                    android:layout_marginBottom="10dp"
+                    android:text="Sign Out"
+                    android:textColor="#EDECEC"
+                    android:textSize="@dimen/_12ssp"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+
+
+
+    </LinearLayout>
+
+
+
+
+
 
 </ScrollView>
 

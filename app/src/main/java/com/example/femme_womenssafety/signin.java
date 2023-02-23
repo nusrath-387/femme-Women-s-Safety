@@ -42,7 +42,8 @@ public class signin extends AppCompatActivity implements View.OnClickListener {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_signin);
-        this.setTitle("LogIn");
+        getSupportActionBar().setDisplayShowHomeEnabled(true);
+        getSupportActionBar().setIcon(R.drawable.woman);
         emailSignUp=(EditText) findViewById(R.id.emailSignUp);
         passwordSignUP=(EditText) findViewById(R.id.passwordSignUP);
         createAccount=(TextView) findViewById(R.id.createAccount);

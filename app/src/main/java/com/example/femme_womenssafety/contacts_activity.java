@@ -20,7 +20,7 @@ import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 
 public class contacts_activity extends AppCompatActivity {
-    Button addData,loadData;
+    Button addData,loadButton;
     EditText addNum,addNam;
     DatabaseReference databaseReference;
 
@@ -32,16 +32,19 @@ public class contacts_activity extends AppCompatActivity {
 
         addData=(Button) findViewById(R.id.addButton);
 
+        loadButton=(Button) findViewById(R.id.loadButton);
+
+
         addNam=(EditText) findViewById(R.id.addNam);
         addNum=(EditText) findViewById(R.id.addNum);
-//        loadData.setOnClickListener(new View.OnClickListener() {
-//    @Override
-//    public void onClick(View view) {
-//        Intent intent=new Intent(getApplicationContext(),viewContactt.class);
-//        startActivity(intent);
-//
-//    }
-//});
+        loadButton.setOnClickListener(new View.OnClickListener() {
+    @Override
+    public void onClick(View view) {
+        Intent intent=new Intent(getApplicationContext(),contact_added.class);
+        startActivity(intent);
+
+    }
+});
 
         addData.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -54,16 +57,18 @@ public class contacts_activity extends AppCompatActivity {
     }
     private void saveData() {
         String name=addNam.getText().toString();
-        String number=addNum.getText().toString();
+        String phone_number=addNum.getText().toString();
         String key=databaseReference.push().getKey();
-        Contact_store Contact_store=new Contact_store(name,number);
-        databaseReference.child(key).setValue("Contact_store");
+        Contact_store contact_store=new Contact_store(name,phone_number);
+        databaseReference.child(key).setValue(contact_store);
 
-        DatabaseReference postsRef = databaseReference.child("femme_our project");
+//        DatabaseReference postsRef = databaseReference.child("femme_our project");
+//
+//        DatabaseReference newPostRef = postsRef.push();
+        Toast.makeText(this, "Suceesfully contact done", Toast.LENGTH_SHORT).show();
 
-        DatabaseReference newPostRef = postsRef.push();
-        Toast.makeText(this, "suceesfully done", Toast.LENGTH_SHORT).show();
-
+       addNam.setText("");
+        addNum.setText("");
     }
 
 

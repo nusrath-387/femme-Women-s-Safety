@@ -33,6 +33,7 @@ android:layout_marginLeft="50dp"
         android:ems="17"
         android:textSize="18sp"
 
+
         android:layout_marginLeft="@dimen/_20sdp"
         android:paddingLeft="10dp"
         android:textColorHint="@color/black"

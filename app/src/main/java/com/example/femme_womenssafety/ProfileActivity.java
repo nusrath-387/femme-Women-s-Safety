@@ -7,15 +7,16 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.LinearLayout;
+import android.widget.RelativeLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 
-public class ProfileActivity extends AppCompatActivity implements View.OnClickListener {
+public class ProfileActivity extends AppCompatActivity  {
 
- LinearLayout  contact,helplinee,sirenn,safe,signout,current,tip,view_off;
+ RelativeLayout contact,help,sirenn,safe,signout,current,tip,view_off;
 
 
 
@@ -24,23 +25,40 @@ public class ProfileActivity extends AppCompatActivity implements View.OnClickLi
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_profile);
         this.setTitle("Contact");
-        contact = (LinearLayout) findViewById(R.id.contactt);
-        sirenn = (LinearLayout) findViewById(R.id.sirenn);
-        safe = (LinearLayout) findViewById(R.id.safe);
-        current = (LinearLayout) findViewById(R.id.current);
-        view_off = (LinearLayout) findViewById(R.id.view_off);
+        contact = ( RelativeLayout) findViewById(R.id.contactt);
+        sirenn = ( RelativeLayout) findViewById(R.id.sirenn);
+        safe = ( RelativeLayout) findViewById(R.id.safe);
+        current = ( RelativeLayout) findViewById(R.id.current);
+        view_off = ( RelativeLayout) findViewById(R.id.view_off);
 
-        tip = (LinearLayout) findViewById(R.id.tip);
-        helplinee = (LinearLayout) findViewById(R.id.helplinee);
-        signout = (LinearLayout) findViewById(R.id.signout);
+        tip = ( RelativeLayout) findViewById(R.id.tip);
+        help = ( RelativeLayout) findViewById(R.id.help);
+        signout = (RelativeLayout)findViewById(R.id.signout);
 
         FirebaseAuth firebaseAuth = FirebaseAuth.getInstance();
         FirebaseUser firebaseUser = firebaseAuth.getCurrentUser();
+        help.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getApplicationContext(),helpine.class);
+                startActivity(intent);
+
+
+            }
+        });
+        contact.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getApplicationContext(), contacts_activity.class);
+                startActivity(intent);
+
+            }
+        });
 
         view_off.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(getApplicationContext(), viewContactt.class);
+                Intent intent = new Intent(getApplicationContext(), contact_added.class);
                 startActivity(intent);
 
             }
@@ -66,7 +84,7 @@ public class ProfileActivity extends AppCompatActivity implements View.OnClickLi
         });
 
 
-        helplinee.setOnClickListener((View.OnClickListener) this);
+
         safe.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -89,37 +107,12 @@ public class ProfileActivity extends AppCompatActivity implements View.OnClickLi
             }
         });
 
-//        contact.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-//                startActivity(new Intent(ProfileActivity.this,contacts_activity.class));
-//            }
-//        });
-//
-//
-//
-//
-//    }
-        contact.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                startActivity(new Intent(ProfileActivity.this,contacts_activity.class));
 
-            }
-        });
+
+
+
     }
 
-    @Override
-    public void onClick(View view) {
-        switch (view.getId()){
-
-
-
-            case (R.id.helplinee):
-            {
-                startActivity(new Intent(ProfileActivity.this,helpine.class));
-
-            }
 
 
 
@@ -132,11 +125,11 @@ public class ProfileActivity extends AppCompatActivity implements View.OnClickLi
 
 
 
-        }
-}
+
 
     @Override
     public void onBackPressed() {
         Toast.makeText(this, "", Toast.LENGTH_SHORT).show();
     }
+
 }

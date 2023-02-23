@@ -3,12 +3,18 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Femmu/app/src/main/res/drawable/ic_baseline_delete_24.xml" value="0.103" />
+        <entry key="..\:/Femmu/app/src/main/res/drawable/ic_baseline_pregnant_woman_24.xml" value="0.123" />
+        <entry key="..\:/Femmu/app/src/main/res/drawable/ic_baseline_pregnant_woman_28.xml" value="0.123" />
+        <entry key="..\:/Femmu/app/src/main/res/drawable/style.xml" value="0.1" />
         <entry key="..\:/Femmu/app/src/main/res/font/font.xml" value="0.27487179487179486" />
         <entry key="..\:/Femmu/app/src/main/res/layout/activity_about_us.xml" value="0.264" />
         <entry key="..\:/Femmu/app/src/main/res/layout/activity_account_created.xml" value="0.1" />
+        <entry key="..\:/Femmu/app/src/main/res/layout/activity_added_contact.xml" value="0.1" />
         <entry key="..\:/Femmu/app/src/main/res/layout/activity_after_homescreen.xml" value="0.1787037037037037" />
         <entry key="..\:/Femmu/app/src/main/res/layout/activity_contact1_raya.xml" value="0.2" />
-        <entry key="..\:/Femmu/app/src/main/res/layout/activity_contacts.xml" value="0.152" />
+        <entry key="..\:/Femmu/app/src/main/res/layout/activity_contact_added.xml" value="0.176" />
+        <entry key="..\:/Femmu/app/src/main/res/layout/activity_contacts.xml" value="0.2" />
         <entry key="..\:/Femmu/app/src/main/res/layout/activity_current_location.xml" value="0.1" />
         <entry key="..\:/Femmu/app/src/main/res/layout/activity_forgotten_password.xml" value="0.2" />
         <entry key="..\:/Femmu/app/src/main/res/layout/activity_get_otp.xml" value="0.25" />
@@ -24,7 +30,7 @@
         <entry key="..\:/Femmu/app/src/main/res/layout/activity_new_view.xml" value="0.1" />
         <entry key="..\:/Femmu/app/src/main/res/layout/activity_phnoe_number.xml" value="0.2" />
         <entry key="..\:/Femmu/app/src/main/res/layout/activity_phone_number.xml" value="0.25" />
-        <entry key="..\:/Femmu/app/src/main/res/layout/activity_profile.xml" value="0.2" />
+        <entry key="..\:/Femmu/app/src/main/res/layout/activity_profile.xml" value="0.1" />
         <entry key="..\:/Femmu/app/src/main/res/layout/activity_safety_tips.xml" value="0.1" />
         <entry key="..\:/Femmu/app/src/main/res/layout/activity_send_email_raya.xml" value="0.2" />
         <entry key="..\:/Femmu/app/src/main/res/layout/activity_send_otp.xml" value="0.25" />
@@ -45,7 +51,8 @@
         <entry key="..\:/Femmu/app/src/main/res/layout/list_item.xml" value="0.16" />
         <entry key="..\:/Femmu/app/src/main/res/layout/listitem.xml" value="0.1" />
         <entry key="..\:/Femmu/app/src/main/res/layout/listitemm.xml" value="0.11296296296296296" />
-        <entry key="..\:/Femmu/app/src/main/res/layout/sample_layout.xml" value="0.2" />
+        <entry key="..\:/Femmu/app/src/main/res/layout/sample_layout.xml" value="0.264" />
+        <entry key="..\:/Femmu/app/src/main/res/menu/menu.xml" value="0.2" />
         <entry key="..\:/Femmu/app/src/main/res/menu/sidemenu.xml" value="0.2" />
         <entry key="..\:/Femmu/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.2" />
       </map>

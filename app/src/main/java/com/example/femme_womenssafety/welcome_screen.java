@@ -18,6 +18,7 @@ public class welcome_screen extends AppCompatActivity {
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
                 WindowManager.LayoutParams.FLAG_FULLSCREEN);
         setContentView(R.layout.activity_welcome_screen);
+        getSupportActionBar().hide();
 
         progress=(ProgressBar)findViewById(R.id.progress);
 
