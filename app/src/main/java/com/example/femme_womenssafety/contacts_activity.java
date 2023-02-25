@@ -6,6 +6,9 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.text.TextUtils;
+import android.view.Menu;
+import android.view.MenuInflater;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -28,6 +31,8 @@ public class contacts_activity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_contacts);
+        getSupportActionBar().setDisplayShowHomeEnabled(true);
+        getSupportActionBar().setIcon(R.drawable.woman);
         databaseReference= FirebaseDatabase.getInstance().getReference("femme_our project");
 
         addData=(Button) findViewById(R.id.addButton);
@@ -56,20 +61,88 @@ public class contacts_activity extends AppCompatActivity {
         });
     }
     private void saveData() {
-        String name=addNam.getText().toString();
+        String name=addNam.getText().toString();//return string
         String phone_number=addNum.getText().toString();
-        String key=databaseReference.push().getKey();
+        String key=databaseReference.push().getKey();//retrieve the unique string created
         Contact_store contact_store=new Contact_store(name,phone_number);
-        databaseReference.child(key).setValue(contact_store);
+        databaseReference.child(key).setValue(contact_store);//Get a reference to location relative to this one
 
-//        DatabaseReference postsRef = databaseReference.child("femme_our project");
-//
-//        DatabaseReference newPostRef = postsRef.push();
-        Toast.makeText(this, "Suceesfully contact done", Toast.LENGTH_SHORT).show();
+
+        Toast.makeText(this, "Suceesfully contact saved", Toast.LENGTH_SHORT).show();
 
        addNam.setText("");
         addNum.setText("");
     }
+
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        MenuInflater menuInflater = getMenuInflater();
+        menuInflater.inflate(R.menu.menu, menu);
+
+        return true;
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
+        switch (item.getItemId()) {
+            case R.id.homeee:
+                Intent intent = new Intent(getApplicationContext(), Home_activity.class);
+
+                startActivity(intent);
+                break;
+
+
+            case R.id.about:
+                Intent intent1 = new Intent(getApplicationContext(),aboutUs.class);
+
+                startActivity(intent1);
+                break;
+
+            case R.id.logout:
+                FirebaseAuth.getInstance().signOut();
+                finish();
+
+
+                Intent intent2 = new Intent(getApplicationContext(), MainActivity.class);
+
+                startActivity(intent2);
+                break;
+
+            case R.id.share:
+                FirebaseAuth.getInstance().signOut();
+                finish();
+
+
+                Intent sharingIntent = new Intent(Intent.ACTION_SEND);
+                sharingIntent.setType("text/plain");
+
+                // Body of the content
+                String shareBody = "Click the app link.\n\n https://drive.google.com/drive/folders/1VkGLDOOWkPvBNA8wvetj0vCC26_hZaEE?usp=share_link"+getPackageName();
+
+                // subject of the content. you can share anything
+                String shareSubject = "Your Subject Here";
+
+                // passing body of the content
+                sharingIntent.putExtra(Intent.EXTRA_TEXT, shareBody);
+
+                // passing subject of the content
+                sharingIntent.putExtra(Intent.EXTRA_SUBJECT, shareSubject);
+                startActivity(Intent.createChooser(sharingIntent, "Share using"));
+
+                startActivity(sharingIntent);
+
+                return true;
+        }
+
+
+        return super.onOptionsItemSelected(item);
+    }
+
+
+
+
+
 
 
 }

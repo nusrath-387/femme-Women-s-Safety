@@ -16,6 +16,7 @@ public class loading extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_loading);
+        getSupportActionBar().hide();
        wait= (LottieAnimationView) findViewById(R.id.wait);
        wait.animate().translationX(2000).setDuration(2000).setStartDelay(2000);
 

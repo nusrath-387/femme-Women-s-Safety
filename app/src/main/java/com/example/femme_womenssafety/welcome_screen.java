@@ -14,9 +14,7 @@ public class welcome_screen extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        requestWindowFeature(Window.FEATURE_NO_TITLE);
-        getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
-                WindowManager.LayoutParams.FLAG_FULLSCREEN);
+
         setContentView(R.layout.activity_welcome_screen);
         getSupportActionBar().hide();
 
@@ -24,6 +22,8 @@ public class welcome_screen extends AppCompatActivity {
 
 
         Thread thread=new Thread(new Runnable() {
+            //Thread is  lightweight sub-process that provides us a way to do background operations without interrupting the User Interface (UI).
+            // When an app is launched, it creates a single thread in which all app components will run by default.
             @Override
             public void run() {
                 doWrok();
@@ -49,6 +49,8 @@ public class welcome_screen extends AppCompatActivity {
             try {
                 Thread.sleep(1000);
                 progress.setProgress(progressBar);
+                //every one second progressbar's value will be changed,thats why we set
+                //value int progressbar
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }

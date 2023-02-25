@@ -35,6 +35,7 @@ public class verifyOTP extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_verify_otp);
+        getSupportActionBar().hide();
 
         verifyButton=(Button) findViewById(R.id.verifyButton);
         resend=(TextView) findViewById(R.id.resend);

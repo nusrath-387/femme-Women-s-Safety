@@ -29,7 +29,7 @@ public class sendOTP extends AppCompatActivity {
         mobile=(EditText) findViewById(R.id.mobile);
         progress1=(ProgressBar)findViewById(R.id.progress1) ;
 
-
+        getSupportActionBar().hide();
         getOTP.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

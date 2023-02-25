@@ -33,6 +33,7 @@ public class custom extends ArrayAdapter<Contact_store> {
 
 
     public custom(Activity context , @NonNull List<Contact_store> contactList ) {
+        //Activity context it's the context of current state of the application/object
         super(context, R.layout.sample_layout,contactList);
         this.contactList = contactList;
         this.context=context;
@@ -44,8 +45,10 @@ public class custom extends ArrayAdapter<Contact_store> {
 
     @NonNull
     @Override
+    //getView() method in Adapter is for generating item's view of a ListView ,
     public View getView(int position, @Nullable View convertView, @NonNull ViewGroup parent) {
         LayoutInflater layoutInflater=context.getLayoutInflater();
+        // instantiate the contents of layout XML files into their corresponding View objects
         View view=layoutInflater.inflate(R.layout.sample_layout,null,true);
         Contact_store contact_store=contactList.get(position);
         TextView t11=view.findViewById(R.id.nameAdd);

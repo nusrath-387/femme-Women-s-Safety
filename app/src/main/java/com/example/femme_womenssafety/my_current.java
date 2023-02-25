@@ -5,11 +5,15 @@ import androidx.core.app.ActivityCompat;
 
 import android.Manifest;
 import android.content.Context;
+import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.location.Location;
 import android.location.LocationListener;
 import android.location.LocationManager;
 import android.os.Bundle;
+import android.view.Menu;
+import android.view.MenuInflater;
+import android.view.MenuItem;
 import android.widget.TextView;
 
 import com.google.android.gms.location.LocationServices;
@@ -20,9 +24,12 @@ import com.google.android.gms.maps.OnMapReadyCallback;
 import com.google.android.gms.maps.SupportMapFragment;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.MarkerOptions;
+import com.google.firebase.auth.FirebaseAuth;
+
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import android.widget.Toast;
 
 public class my_current extends AppCompatActivity  implements OnMapReadyCallback{
     GoogleMap mMap;
@@ -34,6 +41,8 @@ public class my_current extends AppCompatActivity  implements OnMapReadyCallback
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_my_current);
+        getSupportActionBar().setDisplayShowHomeEnabled(true);
+        getSupportActionBar().setIcon(R.drawable.woman);
 
         text1=(TextView)findViewById(R.id.text1) ;
         text2=(TextView)findViewById(R.id.text2);
@@ -81,4 +90,74 @@ public class my_current extends AppCompatActivity  implements OnMapReadyCallback
         }
         mMap.setMyLocationEnabled(true);
     }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        MenuInflater menuInflater = getMenuInflater();
+        menuInflater.inflate(R.menu.menu, menu);
+
+        return true;
     }
+
+    @Override
+    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
+        switch (item.getItemId()) {
+            case R.id.homeee:
+                Intent intent = new Intent(getApplicationContext(), Home_activity.class);
+
+                startActivity(intent);
+                break;
+
+
+            case R.id.about:
+                Intent intent1 = new Intent(getApplicationContext(),aboutUs.class);
+
+                startActivity(intent1);
+                break;
+
+            case R.id.logout:
+                FirebaseAuth.getInstance().signOut();
+                finish();
+
+
+                Intent intent2 = new Intent(getApplicationContext(), MainActivity.class);
+
+                startActivity(intent2);
+                break;
+
+            case R.id.share:
+                FirebaseAuth.getInstance().signOut();
+                finish();
+
+
+                Intent sharingIntent = new Intent(Intent.ACTION_SEND);
+                sharingIntent.setType("text/plain");
+
+                // Body of the content
+                String shareBody = "Click the app link.\n\n https://drive.google.com/drive/folders/1VkGLDOOWkPvBNA8wvetj0vCC26_hZaEE?usp=share_link"+getPackageName();
+
+                // subject of the content. you can share anything
+                String shareSubject = "Your Subject Here";
+
+                // passing body of the content
+                sharingIntent.putExtra(Intent.EXTRA_TEXT, shareBody);
+
+                // passing subject of the content
+                sharingIntent.putExtra(Intent.EXTRA_SUBJECT, shareSubject);
+                startActivity(Intent.createChooser(sharingIntent, "Share using"));
+
+                startActivity(sharingIntent);
+
+                return true;
+        }
+
+
+        return super.onOptionsItemSelected(item);
+    }
+
+
+
+
+
+
+}

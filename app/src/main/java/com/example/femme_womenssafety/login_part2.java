@@ -7,6 +7,9 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.text.method.HideReturnsTransformationMethod;
 import android.text.method.PasswordTransformationMethod;
+import android.view.Menu;
+import android.view.MenuInflater;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.CheckBox;
@@ -42,7 +45,8 @@ public class login_part2 extends AppCompatActivity implements View.OnClickListen
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login_part2);
-        this.setTitle("LogIn");
+        getSupportActionBar().setDisplayShowHomeEnabled(true);
+        getSupportActionBar().setIcon(R.drawable.woman);
         emailSignUp=(EditText) findViewById(R.id.emailSignUp);
         passwordSignUP=(EditText) findViewById(R.id.passwordSignUP);
         createAccount=(TextView) findViewById(R.id.createAccount);
@@ -135,7 +139,9 @@ public class login_part2 extends AppCompatActivity implements View.OnClickListen
                     // Sign in success, update UI with the signed-in user's information
 
                         Intent intent=new Intent(getApplicationContext(),loading.class);
-                        intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+                        intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);//remove all the other activities
+
+                    //   intent.addFlags Flags exist to create a new activity, use an existing activity, .
                         startActivity(intent);
 
 
@@ -155,6 +161,76 @@ public class login_part2 extends AppCompatActivity implements View.OnClickListen
 
 
     }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        MenuInflater menuInflater = getMenuInflater();
+        menuInflater.inflate(R.menu.menu, menu);
+
+        return true;
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
+        switch (item.getItemId()) {
+            case R.id.homeee:
+                Intent intent = new Intent(getApplicationContext(), Home_activity.class);
+
+                startActivity(intent);
+                break;
+
+
+            case R.id.about:
+                Intent intent1 = new Intent(getApplicationContext(),aboutUs.class);
+
+                startActivity(intent1);
+                break;
+
+            case R.id.logout:
+                FirebaseAuth.getInstance().signOut();
+                finish();
+
+
+                Intent intent2 = new Intent(getApplicationContext(), MainActivity.class);
+
+                startActivity(intent2);
+                break;
+
+            case R.id.share:
+                FirebaseAuth.getInstance().signOut();
+                finish();
+
+
+                Intent sharingIntent = new Intent(Intent.ACTION_SEND);
+                sharingIntent.setType("text/plain");
+
+                // Body of the content
+                String shareBody = "Click the app link.\n\n https://drive.google.com/drive/folders/1VkGLDOOWkPvBNA8wvetj0vCC26_hZaEE?usp=share_link"+getPackageName();
+
+                // subject of the content. you can share anything
+                String shareSubject = "Your Subject Here";
+
+                // passing body of the content
+                sharingIntent.putExtra(Intent.EXTRA_TEXT, shareBody);
+
+                // passing subject of the content
+                sharingIntent.putExtra(Intent.EXTRA_SUBJECT, shareSubject);
+                startActivity(Intent.createChooser(sharingIntent, "Share using"));
+
+                startActivity(sharingIntent);
+
+                return true;
+        }
+
+
+        return super.onOptionsItemSelected(item);
+    }
+
+
+
+
+
+
     @Override
     public void onBackPressed() {
         Toast.makeText(this, "", Toast.LENGTH_SHORT).show();

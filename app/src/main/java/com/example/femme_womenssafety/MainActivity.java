@@ -101,8 +101,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             @Override
             public void onCheckedChanged(CompoundButton compoundButton, boolean b) {
                 if (!b) {
+                    //Hide Password:
                     password.setTransformationMethod(PasswordTransformationMethod.getInstance());
                 } else {
+                    //Show Password:
                     password.setTransformationMethod(HideReturnsTransformationMethod.getInstance());
                 }
             }
@@ -111,12 +113,14 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         if (emailID.length() > 8) {
             emailID.setError("Atleast 20 charachters");
             emailID.requestFocus();
+            //requestFocus() give it hints about the direction
         }
 
 
     }
 
-    @SuppressLint("NonConstantResourceId")
+    @SuppressLint("NonConstantResourceId")//if statement inside switch/cases scenario crashes my app [duplicate]
+    //when different button clicks,it crashes sometimes
     @Override
     public void onClick(View view) {
         switch (view.getId()) {
@@ -141,7 +145,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     private void userRegister() {
         String email = emailID.getText().toString().trim();
-        String Password = password.getText().toString().trim();
+        String Password = password.getText().toString().trim();//returns a new string, without modifying the original string
         String Name = namee.getText().toString().trim();
 
 
@@ -182,6 +186,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         mAuth.createUserWithEmailAndPassword(email, Password).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
 
             @Override
+            //
+            ///Task<AuthResult> task Tries to create a new user account with the given email address and password.
             public void onComplete(@NonNull Task<AuthResult> task) {
                 determinateBar.setVisibility(View.GONE);
                 // Sign in success, update UI with the signed-in user's information
@@ -192,6 +198,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                     firebaseAuth.getCurrentUser().sendEmailVerification().addOnCompleteListener(new OnCompleteListener<Void>() {
                         @Override
                         public void onComplete(@NonNull Task<Void> task) {
+                            //Task<Void> task doesnt return
                             determinateBar.setVisibility(View.VISIBLE);
 //                             userID=firebaseAuth.getCurrentUser().getUid();
 //                             FirebaseUser users=firebaseAuth.getCurrentUser();
@@ -249,12 +256,14 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 Intent intent = new Intent(getApplicationContext(), Home_activity.class);
 
                 startActivity(intent);
+                break;
 
 
         case R.id.about:
         Intent intent1 = new Intent(getApplicationContext(),aboutUs.class);
 
         startActivity(intent1);
+            break;
 
             case R.id.logout:
                 FirebaseAuth.getInstance().signOut();
@@ -264,6 +273,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 Intent intent2 = new Intent(getApplicationContext(), MainActivity.class);
 
                 startActivity(intent2);
+                break;
 
             case R.id.share:
                 FirebaseAuth.getInstance().signOut();
@@ -287,6 +297,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 startActivity(Intent.createChooser(sharingIntent, "Share using"));
 
                 startActivity(sharingIntent);
+
         return true;
     }
 
@@ -296,7 +307,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
 
 
-    @Override
+
     public void onBackPressed() {
         Intent intent=new Intent(getApplicationContext(),after_homescreen.class);
 

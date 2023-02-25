@@ -21,7 +21,7 @@ public class Home_activity extends AppCompatActivity  {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        this.setTitle("Home Page");
+
         setContentView(R.layout.activity_home);
         login = (Button) findViewById(R.id.login);
         safe = (Button) findViewById(R.id.safe);

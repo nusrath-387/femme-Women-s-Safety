@@ -62,9 +62,7 @@
         <activity
             android:name=".safety_tips"
             android:exported="false" />
-        <activity
-            android:name=".viewContactt"
-            android:exported="false" /> <!-- <activity -->
+        <!-- <activity -->
         <!-- android:name=".welcome_screen" -->
         <!-- android:exported="false" /> -->
         <activity
@@ -78,9 +76,6 @@
             android:exported="false" />
         <activity
             android:name=".my_current"
-            android:exported="false" />
-        <activity
-            android:name=".newView"
             android:exported="false" />
         <activity
             android:name=".login_part2"
@@ -117,9 +112,6 @@
             android:exported="false" />
         <activity
             android:name=".signin"
-            android:exported="false" />
-        <activity
-            android:name=".SignUp"
             android:exported="false" />
         <activity
             android:name=".welcome_screen"
