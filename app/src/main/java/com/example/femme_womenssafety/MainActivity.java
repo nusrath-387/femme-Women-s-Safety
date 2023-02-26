@@ -51,12 +51,13 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                     ".{8,}" +                // at least 8 characters
                     "$");
     public Pattern PHONEE =
-            Pattern.compile("^\\+?(88)?0?1[3456789][0-9]{8}\\b");
+            Pattern.compile("^\\+?(88)?0?1[3456789][0-9]{8}");
 
 
     public Pattern emailPattern =
             Pattern.compile(
-                    "[0-9A-Za-z]([0-9A-Za-z-]{0,61}[0-9A-Za-z])?");
+//                    "[0-9 A-Z a-z]([0-9 A-Z a-z-]{0,61}[0-9 A-Z a-z])?");
+    "[a-z 0-9]+@[a-z]+.[a-z]");
 
 
     private EditText emailID, password, namee;
@@ -160,7 +161,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             emailID.requestFocus();
             return;
         }
-
+// Utils - A categorized directory of libraries and tools for Android
         if (!android.util.Patterns.EMAIL_ADDRESS.matcher(email).matches()) {
             emailID.setError("Enter a valid  email");
             emailID.requestFocus();
@@ -313,7 +314,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
                 startActivity(intent);
 
-        Toast.makeText(this, "", Toast.LENGTH_SHORT).show();
+        Toast.makeText(this, "Femme-Women Safety", Toast.LENGTH_SHORT).show();
     }
 
 

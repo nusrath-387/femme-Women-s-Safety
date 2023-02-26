@@ -40,12 +40,17 @@ public class send_email_raya extends AppCompatActivity {
                 String message=editTextMessage.getText().toString();
 
                 Intent email = new Intent(Intent.ACTION_SEND);
-                email.putExtra(Intent.EXTRA_EMAIL, new String[]{ to});
+                //ACTION_SEND - (ACTION_SEND) and data will help us to launch the available email clients to send an email in our application.
+
+
+
+                email.putExtra(Intent.EXTRA_EMAIL, new String[]{ to});//It’s an array of email addresses
                 email.putExtra(Intent.EXTRA_SUBJECT, subject);
                 email.putExtra(Intent.EXTRA_TEXT, message);
                 email.setType("message/rfc822");
-
+//setType - We use this property to set the MIME type of data that we want to send.(text/plain” and “image/jpg”.)
                 startActivity(Intent.createChooser(email, "Choose an Email client :"));
+                //If you want to custimize the title of that email, you can use createChooser here sharingIntent(subject of the content)
 
             }
         });

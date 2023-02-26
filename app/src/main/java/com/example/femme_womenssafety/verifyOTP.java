@@ -52,6 +52,7 @@ public class verifyOTP extends AppCompatActivity {
         TextView textMobile=(TextView) findViewById(R.id.textMobile);
         TextView resend=(TextView) findViewById(R.id.resend);
         textMobile.setText(String.format("+880-%s",getIntent().getStringExtra("mobilee")));
+        //getIntent().getStringExtra get data from another activity
 
         verificationID=getIntent().getStringExtra("verificationID");
 
@@ -90,6 +91,7 @@ public class verifyOTP extends AppCompatActivity {
                        if(task.isSuccessful()){
                            Intent intent=new Intent(getApplicationContext(),account_created.class);
                            intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK|Intent.FLAG_ACTIVITY_CLEAR_TASK);
+                           //FLAG_ACTIVITY_NEW_TASK - Start the activity in a new task or reuse an existing task tied to that activity
                            startActivity(intent);
                        }
                        else{
@@ -142,6 +144,7 @@ public class verifyOTP extends AppCompatActivity {
 
     private void inputSetup(){
         num1.addTextChangedListener(new TextWatcher() {
+            // TextWatcher interface can be used for listening in for changes in text in an EditText.
             @Override
             public void beforeTextChanged(CharSequence charSequence, int i, int i1, int i2) {
 
@@ -251,7 +254,7 @@ public class verifyOTP extends AppCompatActivity {
     }
     @Override
     public void onBackPressed() {
-        Toast.makeText(this, "", Toast.LENGTH_SHORT).show();
+        Toast.makeText(this, "Femme-Women Safety", Toast.LENGTH_SHORT).show();
     }
 
 }

@@ -48,14 +48,27 @@ public class my_current extends AppCompatActivity  implements OnMapReadyCallback
         text2=(TextView)findViewById(R.id.text2);
         text3=(TextView)findViewById(R.id.text3);
 
+        //  supportMapFragment This fragment is the simplest way to place a map in an application.
+
         supportMapFragment = (SupportMapFragment) getSupportFragmentManager().findFragmentById(R.id.map);
+        //FragmentManager is class provided by the framework which is used to
+        // create transactions for adding, removing or replacing fragments.getSupportFragmentManager  is fragment
 
         supportMapFragment.getMapAsync(this);
+        //getMapAsync(OnMapReadyCallback) This class automatically initializes the maps system and the view.
         LocationManager locationManager = (LocationManager) getSystemService(Context.LOCATION_SERVICE);
+        //LocationManager is the main class through which your application can access location services on Android.
+        //system services, a reference can be obtained from calling the getSystemService() metho
 
+
+
+        //You can use the API that requires the permission.
         if (ActivityCompat.checkSelfPermission(my_current.this, Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED)
-        {
+        //ACCESS_COARSE_LOCATION permission if your application uses a network-based location provider only.
+            //The more accurate GPS requires the ACCESS_FINE_LOCATION permission
 
+        {
+          //You can directly ask for the permission.
             ActivityCompat.requestPermissions(this, new String[]{
                     Manifest.permission.ACCESS_FINE_LOCATION
             }, 100);
@@ -67,7 +80,11 @@ public class my_current extends AppCompatActivity  implements OnMapReadyCallback
                 if (oke) {
                     LatLng latLng = new LatLng(location.getLatitude(),location.getLongitude());
                     mMap.addMarker(new MarkerOptions().position(latLng).title("I am here"));
+                    //marker option standard icon,title through MarkerOptions()
+
+                    //The Maps SDK for Android allows you to change the user's viewpoint of the map by modifying the map's camera.
                     mMap.moveCamera(CameraUpdateFactory.newLatLng(latLng));
+                    //CameraUpdateFactory.newLatLng(LatLng) gives you a CameraUpdate that changes the camera's latitude and longitude
 
                     text1.setText(String.valueOf(location.getLatitude()));
                     text2.setText(String.valueOf(location.getLongitude()));
@@ -80,6 +97,7 @@ public class my_current extends AppCompatActivity  implements OnMapReadyCallback
 
 
     @Override
+    //When map is loading onMapReady(GoogleMap googleMap)
     public void onMapReady(@NonNull GoogleMap googleMap) {
         mMap = googleMap;
         oke = true;
@@ -141,6 +159,7 @@ public class my_current extends AppCompatActivity  implements OnMapReadyCallback
 
                 // passing body of the content
                 sharingIntent.putExtra(Intent.EXTRA_TEXT, shareBody);
+                //The putExtra() method is used to send data between Android activities.
 
                 // passing subject of the content
                 sharingIntent.putExtra(Intent.EXTRA_SUBJECT, shareSubject);

@@ -34,7 +34,7 @@ public class sendOTP extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 if(mobile.getText().toString().trim().isEmpty()){
-                    Toast.makeText(sendOTP.this, "Enter mobile", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(sendOTP.this, "Enter mobile number", Toast.LENGTH_SHORT).show();
                     return;
 
                 }

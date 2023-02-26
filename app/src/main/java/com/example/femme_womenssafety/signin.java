@@ -112,6 +112,7 @@ public class signin extends AppCompatActivity implements View.OnClickListener {
             emailSignUp.requestFocus();
             return;
         }
+        //// Utils - A categorized directory of libraries and tools for Android
         if(!android.util.Patterns.EMAIL_ADDRESS.matcher(email).matches()){
             emailSignUp.setError("Enter a valid email address");
             emailSignUp.requestFocus();
